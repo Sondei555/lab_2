@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Гриби</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Гриби: інтерактивна карта</h1>
+    <img src="mushrooms_combined.jpg" usemap="#mushroommap" alt="Гриби">
+
+    <map name="mushroommap">
+        <!-- Лисичка (зліва, кругла область) -->
+        <area shape="circle" coords="100,150,60" href="https://uk.wikipedia.org/wiki/Лисичка_звичайна" alt="Лисичка">
+
+        <!-- Білий гриб (по центру, прямокутна область) -->
+        <area shape="rect" coords="200,80,340,270" href="https://uk.wikipedia.org/wiki/Білий_гриб" alt="Білий гриб">
+
+        <!-- Мухомор (праворуч, трикутна область) -->
+        <area shape="poly" coords="420,60,390,270,470,270" href="https://uk.wikipedia.org/wiki/Мухомор_червоний" alt="Мухомор">
+    </map>
+
+    <h2>Таблиця грибів</h2>
+    <table>
+        <tr>
+            <th>Назва</th>
+            <th>Тип</th>
+            <th>Їстівність</th>
+        </tr>
+        <tr>
+            <td>Лисичка</td>
+            <td>Cantharellus cibarius</td>
+            <td>Їстівний</td>
+        </tr>
+        <tr>
+            <td>Білий гриб</td>
+            <td>Boletus edulis</td>
+            <td>Їстівний</td>
+        </tr>
+        <tr>
+            <td>Мухомор</td>
+            <td>Amanita muscaria</td>
+            <td>Отруйний</td>
+        </tr>
+    </table>
+    <a style="display: block; text-align: right" href="D:\front-end_Sondei_ІПЗ-14\lab1_Sondei\index.html">На головну</a>
+</body>
+</html>
