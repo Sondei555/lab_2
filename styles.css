@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -11,37 +9,71 @@ h1, h2 {
     color: #2e8b57;
 }
 
- {
-    display: flex; 
-    justify-content: space-around; 
+.image-links-container {
+    display: flex;
+    justify-content: space-around;
     align-items: flex-start;
     margin-bottom: 30px;
+    padding: 20px 0;
 }
 
- {
-    width: 200px; 
-    height: auto;
-    border: 3px solid transparent; 
-    transition: border-color 0.3s;
+.image-links-container a {
+    text-decoration: none;
+    display: block;
 }
 
- {
+.image-links-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    transition: border-color 0.3s, opacity 0.3s;
+    display: block;
+    margin: 0;
+}
+
+/* Прибираємо синю рамку навколо зображень-посилань */
+a img {
     border: none;
 }
-
 
 a:hover img {
     border-color: #2e8b57;
     opacity: 0.9;
 }
 
+/* --- СТИЛІ ДЛЯ РІЗНИХ ФОРМ --- */
 
+/* 1. КРУГЛА ФОРМА */
+.image-shape.circle {
+    border-radius: 50%;
+}
+
+/* 2. ПРЯМОКУТНА ФОРМА (З заокругленням для візуального ефекту) */
+.image-shape.rect {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* 3. ТРИКУТНА ФОРМА (Використовуємо clip-path) */
+.image-shape.poly {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    /* Для трикутника краще, щоб ширина і висота були рівні */
+    width: 200px;
+    height: 200px;
+}
+
+/* --- СТИЛІЗАЦІЯ ТАБЛИЦІ --- */
 table {
     width: 60%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, th, td {
